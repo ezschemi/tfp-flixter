@@ -15,6 +15,11 @@
   color: white;
 }
 
+body {
+  background: url("silver_scales.png");
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}  
+
 .hero {
   background: url("hero2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
