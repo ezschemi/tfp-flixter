@@ -25,9 +25,11 @@
         <%= s.title %>
         <% s.lessons.each do |l| %>
           <div class="lesson">
-            <b><%= l.title %></b>
-            -
-            <%= l.subtitle %>
+            <%= link_to lesson_path(l) do %>
+              <b><%= l.title %></b>
+              -
+              <%= l.subtitle %>
+            <% end %>
           </div>
         <% end %>
       </div>
