@@ -8,4 +8,12 @@ class Course < ApplicationRecord
   validates :cost, presence: true, numericality: { greater_than: 0 }
 
   mount_uploader :image, ImageUploader
+
+  def free?
+    cost.zero?
+  end
+
+  def premium?
+    ! free?
+  end
 end
