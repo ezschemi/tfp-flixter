@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root "static_pages#index"
 
+  get "privacy", to: "static_pages#privacy"
+  get "team", to: "static_pages#team"
+
   resource :dashboard, only: [:show]
 
   resources :courses, only: [:index, :show] do
